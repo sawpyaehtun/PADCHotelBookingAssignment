@@ -12,6 +12,8 @@ class SearchDataView: UIView {
 
     @IBOutlet weak var lblTitle: UILabel!
     @IBOutlet weak var lblValue: UILabel!
+    @IBOutlet weak var imgNavigation: UIImageView!
+    
     var id : Int?
     var dataArray : [String] = []
     var multipleDataArray : [Any] = []
@@ -53,6 +55,7 @@ class SearchDataView: UIView {
         let tapGestureRecongniser = UITapGestureRecognizer(target: self, action: #selector(didTap))
         self.isUserInteractionEnabled = true
         self.addGestureRecognizer(tapGestureRecongniser)
+        self.imgNavigation.isHidden = true
     }
     
     @objc func didTap(){

@@ -24,6 +24,7 @@ class FilterTableViewCell: UITableViewCell {
     }
 
     private func setUpUIs(){
+        viewLocation.imgNavigation.isHidden = false
         let searchDataViewArray = [viewLocation,viewCheckIn,viewCheckOut,viewCount,viewRoom]
         for i in 0 ..< searchDataViewArray.count {
             searchDataViewArray[i]?.id = i

@@ -13,6 +13,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SearchDataView" customModule="PADCHotelBooking" customModuleProvider="target">
             <connections>
+                <outlet property="imgNavigation" destination="ZtY-Yp-Xub" id="jEv-DN-Dsg"/>
                 <outlet property="lblTitle" destination="DGL-kN-s2L" id="bCr-CT-Izx"/>
                 <outlet property="lblValue" destination="lkG-FC-sLE" id="u7m-cK-ods"/>
             </connections>
@@ -31,10 +32,19 @@
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="navigation" translatesAutoresizingMaskIntoConstraints="NO" id="ZtY-Yp-Xub">
+                            <rect key="frame" x="348" y="22" width="30" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="Pnz-zI-M58"/>
+                                <constraint firstAttribute="width" constant="30" id="vBc-gM-Jh8"/>
+                            </constraints>
+                        </imageView>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
+                        <constraint firstItem="ZtY-Yp-Xub" firstAttribute="centerY" secondItem="lkG-FC-sLE" secondAttribute="centerY" id="9NZ-MB-IBY"/>
                         <constraint firstItem="lkG-FC-sLE" firstAttribute="leading" secondItem="Yn4-ko-EDf" secondAttribute="leading" constant="15" id="AcY-IE-zgG"/>
+                        <constraint firstAttribute="trailing" secondItem="ZtY-Yp-Xub" secondAttribute="trailing" constant="16" id="Kdf-Gg-O5K"/>
                         <constraint firstAttribute="bottom" secondItem="lkG-FC-sLE" secondAttribute="bottom" constant="10" id="YHW-zO-fPF"/>
                         <constraint firstAttribute="trailing" secondItem="lkG-FC-sLE" secondAttribute="trailing" constant="5" id="aOL-86-vSt"/>
                         <constraint firstItem="lkG-FC-sLE" firstAttribute="top" secondItem="Yn4-ko-EDf" secondAttribute="top" constant="18" id="baq-3B-xaN"/>
@@ -102,6 +112,7 @@
         </view>
     </objects>
     <resources>
+        <image name="navigation" width="25" height="25"/>
         <namedColor name="appBackGround">
             <color red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
