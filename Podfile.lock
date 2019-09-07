@@ -1,0 +1,20 @@
+PODS:
+  - ActionSheetPicker-3.0 (2.3.0)
+  - FittedSheets (1.4.4)
+
+DEPENDENCIES:
+  - ActionSheetPicker-3.0
+  - FittedSheets
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - ActionSheetPicker-3.0
+    - FittedSheets
+
+SPEC CHECKSUMS:
+  ActionSheetPicker-3.0: eef157d75e151f255c5333d26656c7fbfe905a51
+  FittedSheets: f56b96c7bd81585d9a183c2a06abe176fa0b55db
+
+PODFILE CHECKSUM: 3b911905ed335b92f78687313556aed3a60171d4
+
+COCOAPODS: 1.7.3
